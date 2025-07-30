@@ -2,14 +2,22 @@
   "name": "backend_appr",
   "version": "1.0.0",
   "description": "a backend project",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/index.js"
   },
   "keywords": [
     "javascript",
     "backend"
   ],
   "author": "Zeeshan Akbar",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
