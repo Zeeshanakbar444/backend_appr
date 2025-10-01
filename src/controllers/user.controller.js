@@ -418,6 +418,9 @@ const getWatchHistory = asynHandler(async (req, res) => {
       },
     },
   ]);
+
+  return res.status(200)
+  .json(ApiResponse(200,user[0].watchHistory,"watch History Successfullt"))
 });
 
 export {
